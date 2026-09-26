@@ -1,0 +1,121 @@
+{
+  "stage": "repaired",
+  "engine": "great_expectations 1.23.2",
+  "generated_at": "2026-09-26T03:28:37+00:00",
+  "row_count": 24,
+  "success": true,
+  "is_fresh": true,
+  "statistics": {
+    "evaluated_expectations": 8,
+    "successful_expectations": 8,
+    "unsuccessful_expectations": 0
+  },
+  "failed_checks": [],
+  "checks": [
+    {
+      "expectation": "expect_table_row_count_to_be_between",
+      "column": null,
+      "kwargs": {
+        "min_value": 5,
+        "max_value": 5000
+      },
+      "success": true,
+      "observed_value": 24,
+      "unexpected_count": null,
+      "unexpected_percent": null,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "paper_id",
+      "kwargs": {},
+      "success": true,
+      "observed_value": null,
+      "unexpected_count": 0,
+      "unexpected_percent": 0.0,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_values_to_be_unique",
+      "column": "paper_id",
+      "kwargs": {},
+      "success": true,
+      "observed_value": null,
+      "unexpected_count": 0,
+      "unexpected_percent": 0.0,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "title",
+      "kwargs": {},
+      "success": true,
+      "observed_value": null,
+      "unexpected_count": 0,
+      "unexpected_percent": 0.0,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_value_lengths_to_be_between",
+      "column": "title",
+      "kwargs": {
+        "min_value": 8
+      },
+      "success": true,
+      "observed_value": null,
+      "unexpected_count": 0,
+      "unexpected_percent": 0.0,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "text_for_embedding",
+      "kwargs": {},
+      "success": true,
+      "observed_value": null,
+      "unexpected_count": 0,
+      "unexpected_percent": 0.0,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_value_lengths_to_be_between",
+      "column": "summary",
+      "kwargs": {
+        "min_value": 30
+      },
+      "success": true,
+      "observed_value": null,
+      "unexpected_count": 0,
+      "unexpected_percent": 0.0,
+      "partial_unexpected_list": []
+    },
+    {
+      "expectation": "expect_column_values_to_be_between",
+      "column": "age_days",
+      "kwargs": {
+        "mostly": 0.75,
+        "min_value": 0.0,
+        "max_value": 180.0
+      },
+      "success": true,
+      "observed_value": null,
+      "unexpected_count": 1,
+      "unexpected_percent": 4.166666666666666,
+      "partial_unexpected_list": [
+        182.0
+      ]
+    }
+  ],
+  "freshness": {
+    "latest_published": "2026-07-22",
+    "oldest_published": "2026-03-28",
+    "median_age_days": 111.5,
+    "max_age_days": 182,
+    "threshold_days": 180,
+    "max_stale_ratio": 0.25,
+    "stale_rows": 1,
+    "total_rows": 24,
+    "stale_ratio": 0.0417,
+    "is_fresh": true
+  }
+}

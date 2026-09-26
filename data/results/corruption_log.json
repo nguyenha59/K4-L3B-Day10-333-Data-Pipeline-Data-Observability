@@ -1,0 +1,182 @@
+{
+  "seed": 20260926,
+  "run_date": "2026-09-26T03:28:15+00:00",
+  "rows_before": 24,
+  "rows_after": 21,
+  "scenarios": [
+    {
+      "scenario": "drop_latest_records",
+      "rows_affected": 5,
+      "description": "Removed the 5 most recently published papers (20%).",
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671812",
+          "field": "<row>",
+          "before": "2026-07-22",
+          "after": null
+        },
+        {
+          "paper_id": "10.1145/3637528.3671808",
+          "field": "<row>",
+          "before": "2026-07-19",
+          "after": null
+        },
+        {
+          "paper_id": "10.1145/3637528.3671804",
+          "field": "<row>",
+          "before": "2026-07-05",
+          "after": null
+        },
+        {
+          "paper_id": "10.1145/3637528.3671807",
+          "field": "<row>",
+          "before": "2026-06-25",
+          "after": null
+        },
+        {
+          "paper_id": "10.1145/3637528.3671802",
+          "field": "<row>",
+          "before": "2026-06-12",
+          "after": null
+        }
+      ]
+    },
+    {
+      "scenario": "blank_summary",
+      "rows_affected": 3,
+      "description": "Summary replaced with an empty string.",
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671814",
+          "field": "summary",
+          "before": "An extended empirical study on ilent data corruption in RAG pipelines degrades LLM answer faithfulness without throwing runtime errors. We introduce automated quality gates using Great Expectations 1.x to catch stale and malformed embeddings before serving Further analysis on scaling parameters.",
+          "after": ""
+        },
+        {
+          "paper_id": "10.1145/3637528.3671821",
+          "field": "summary",
+          "before": "An extended empirical study on ierarchical and semantic boundary chunking preserves code block contexts and markdown headings. Our benchmark demonstrates superior top-1 recall compared to fixed character length sliding windows Further analysis on scaling parameters.",
+          "after": ""
+        },
+        {
+          "paper_id": "10.1145/3637528.3671813",
+          "field": "summary",
+          "before": "An extended empirical study on etrieval-Augmented Generation (RAG) significantly improves large language model accuracy by grounding responses in retrieved passages. We explore agentic multi-hop reasoning and routing across heterogeneous vector indices Further analysis on scaling parameters.",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "scenario": "inject_noise",
+      "rows_affected": 3,
+      "description": "About 50% of summary words replaced with random garbage tokens.",
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671810",
+          "field": "summary",
+          "before": "Embedding quality checks directly into data pipelines enables fail-closed governance. We show how Great Expectations suites catch schema drifts and null fields before documents reach the embedding model.",
+          "after": "Embedding quality checks directly 5uyp~PSG 2TGd pipelines 9w0ntZt ykUfh7DIM nqSn hCB&6Yjr show #07WGN^ Great Expectations suites vqYbbg vxF9cl7 M$@xXdNc and xQcFcT fields before documents 1VSU the XUc4N5 model."
+        },
+        {
+          "paper_id": "10.1145/3637528.3671811",
+          "field": "summary",
+          "before": "Dense vector search excels at conceptual similarity but struggles with exact acronyms and serial numbers. Reciprocal Rank Fusion of sparse lexical scores and dense embeddings achieves optimal recall.",
+          "after": "Dense 77jt40Za skjGW s1wgz7 aVZ~ YfgY2&unc similarity HV~w struggles with exact acronyms xcOdELzm 1g3MB numbers. Reciprocal Tcfl@ Fusion J2nt d~~67hTY bx83N6Rzl scores K8As& TiaAif embeddings achieves yNgnzfg#4 DDzoZcX1"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671816",
+          "field": "summary",
+          "before": "An extended empirical study on e define freshness service-level agreements (SLAs) for temporal document ingestion. By tracking document age and update cadence, our orchestrator dynamically prioritizes recrawling high-churn technical corpora Further analysis on scaling parameters.",
+          "after": "An extended empirical 4m$J5QA &^6tQt%XM e define 0XYGUrvOJ service-level agreements (SLAs) %ArNyz temporal 4bvilpVlh BFo#XNvYq By tracking document RBmzV and update Rn#Z&l&O1 our &$0V1e dynamically prioritizes recrawling &E9^ #wDvB7 corpora Further D^Z2x58sd on scaling parameters."
+        }
+      ]
+    },
+    {
+      "scenario": "truncate_title",
+      "rows_affected": 3,
+      "description": "Title cut to 6 characters (below the 8-character threshold).",
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671819",
+          "field": "title",
+          "before": "Advanced Perspectives on Synthetic Corruption Testing: Stress-Testing Vector Search Robustness",
+          "after": "Advanc"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671806",
+          "field": "title",
+          "before": "Semantic Layer Integration for Agentic Text-to-SQL Pipelines",
+          "after": "Semant"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671820",
+          "field": "title",
+          "before": "Advanced Perspectives on Multi-Agent Consensus for High-Stakes Fact Verification",
+          "after": "Advanc"
+        }
+      ]
+    },
+    {
+      "scenario": "stale_date",
+      "rows_affected": 6,
+      "description": "Published date moved back 365 days on 30% of rows.",
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671803",
+          "field": "published",
+          "before": "2026-04-18",
+          "after": "2025-04-18"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671809",
+          "field": "published",
+          "before": "2026-04-30",
+          "after": "2025-04-30"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671815",
+          "field": "published",
+          "before": "2026-06-03",
+          "after": "2025-06-03"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671805",
+          "field": "published",
+          "before": "2026-03-28",
+          "after": "2025-03-28"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671817",
+          "field": "published",
+          "before": "2026-06-05",
+          "after": "2025-06-05"
+        },
+        {
+          "paper_id": "10.1145/3637528.3671801",
+          "field": "published",
+          "before": "2026-05-20",
+          "after": "2025-05-20"
+        }
+      ]
+    },
+    {
+      "scenario": "duplicate_rows",
+      "rows_affected": 2,
+      "description": "Appended 2 exact duplicate rows (paper_id no longer unique).",
+      "changes": [
+        {
+          "paper_id": "10.1145/3637528.3671824",
+          "field": "<row>",
+          "before": 1,
+          "after": 2
+        },
+        {
+          "paper_id": "10.1145/3637528.3671811",
+          "field": "<row>",
+          "before": 1,
+          "after": 2
+        }
+      ]
+    }
+  ]
+}

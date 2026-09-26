@@ -1,0 +1,14 @@
+{
+  "provider": "openai",
+  "status": "ok",
+  "answers": [
+    {
+      "question": "What is the summary of the paper 'Continuous Benchmark Evaluation for Enterprise Retrieval Pipelines'?",
+      "answer": "The paper titled \"Continuous Benchmark Evaluation for Enterprise Retrieval Pipelines\" discusses the limitations of static benchmarks in capturing domain drift within enterprise knowledge bases. The authors, Quang Le and Yen Vu, propose a synthetic test generator that automatically creates paired evaluation sets whenever new corpora are ingested, allowing for continuous benchmarking in enterprise retrieval systems. This approach aims to enhance the evaluation methodology for enterprise systems. The paper was published on July 22, 2026."
+    },
+    {
+      "question": "Who authored the paper 'Synthetic Corruption Testing: Stress-Testing Vector Search Robustness'?",
+      "answer": "The paper \"Synthetic Corruption Testing: Stress-Testing Vector Search Robustness\" was authored by Kien Duong and Vy Ly."
+    }
+  ]
+}
