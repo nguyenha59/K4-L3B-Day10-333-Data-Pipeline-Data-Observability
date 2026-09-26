@@ -13,7 +13,7 @@
 |---:|---|---|---|---|---|
 | 1 | Nguyễn Thị Hạ | 02536 | | Corruption & Integration (`corruption.py`, `phase1.py`, `corruption_flow.py`, `tests/`) | `report/02536_NguyenThiHa.md` |
 | 2 | Phạm Hương Giang | 02359 | | Data Ingestion & Cleaning (`crossref.py`, `cleaning.py`, raw data) | `report/02359_PhamHuongGiang.md` |
-| 3 | Lê Thanh Tình | | | Evaluation & Observability (`testset.py`, `quality.py` GX 1.x, `reporting.py`) | `report/<MSSV>_LeThanhTinh.md` |
+| 3 | Lê Thanh Tình | 02449 | | Evaluation & Observability (`testset.py`, `quality.py` GX 1.x, `reporting.py`) | `report/02449_LeThanhTinh.md` |
 
 Nhóm 3 thành viên, chia theo mô hình 3 người trong `report/README.md`. Các thành viên phụ trách ngang nhau, không có vai trò trưởng nhóm.
 
@@ -51,11 +51,13 @@ Nhóm 3 thành viên, chia theo mô hình 3 người trong `report/README.md`. C
 - **Điều học được / Đóng góp chính:**
   - _(Giang tự điền)_
 
-### ## LeThanhTinh-<MSSV>
+### ## LeThanhTinh-02449
 - **Vai trò:** Evaluation & Observability.
 - **Công việc chi tiết đã hoàn thành:**
   - Thiết lập Quality Gate theo chuẩn **Great Expectations 1.x** (ephemeral context) và Freshness SLA trong `src/observability/quality.py`.
   - Xây dựng bộ 10 câu hỏi đánh giá qua 4 nhóm `summary/authors/date/categories` trong `src/evaluation/testset.py`.
   - Sinh báo cáo `phase1_report.md` và bảng đối chiếu 3 trạng thái `corruption_report.md` trong `src/observability/reporting.py`.
 - **Điều học được / Đóng góp chính:**
-  - _(Tình tự điền)_
+  - Evaluation chỉ có ý nghĩa khi giữ cố định test set và ground truth giữa baseline, corrupted và repaired.
+  - Kết hợp GX quality gate với Freshness SLA giúp phát hiện silent failure dù pipeline vẫn chạy hết luồng.
+  - Báo cáo định lượng cho thấy dữ liệu corrupted làm `judge_accuracy` giảm từ 1.0 xuống 0.7; repair từ raw snapshot giúp các chỉ số trở lại baseline.

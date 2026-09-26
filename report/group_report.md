@@ -15,7 +15,7 @@
 | --: | --- | --- | --- | --- |
 | 1 | Nguyễn Thị Hạ | 02536 | Corruption & Integration | `ingestion/corruption.py`, `pipelines/phase1.py`, `pipelines/corruption_flow.py`, `tests/`; metrics 3 trạng thái, `corruption_log.json` |
 | 2 | Phạm Hương Giang | 02359 | Data Ingestion & Cleaning | `ingestion/crossref.py`, `ingestion/cleaning.py`; `data/raw/*`, `data/clean/papers_clean.*` |
-| 3 | Lê Thanh Tình | | Evaluation & Observability | `evaluation/testset.py`, `observability/quality.py`, `observability/reporting.py`; `test_set.json`, `data/quality/*`, `data/reports/*` |
+| 3 | Lê Thanh Tình | 02449 | Evaluation & Observability | `evaluation/testset.py`, `observability/quality.py`, `observability/reporting.py`; `test_set.json`, `data/quality/*`, `data/reports/*` |
 
 ## 2. Tóm tắt kết quả
 
